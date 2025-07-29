@@ -10,13 +10,10 @@ public class Solution {
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
         System.out.println("Bird said:"+a);
-        int sum=0;
-        int temp=a;
-        while(temp>0){
-            sum+=temp%10;
-            temp/=10;
-        }
-        System.out.println("Alice must go in path-"+sum);
+        int sum=a%10;
+        int temp=a/10;
+        int sum1=sum+temp;
+        System.out.println("Alice must go in path-"+sum1);
         
     }
 }

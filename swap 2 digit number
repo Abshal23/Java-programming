@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int n1=n;
+        if(n1>9 && n1<100){
+            int one=n1%10;
+            int ten=(n1/10)%10;
+            System.out.print(one);
+            System.out.print(ten);
+        }
+        else if(n1>100){
+            while(n1>100){
+                n1/=10;
+            }
+            int one=n1%10;
+            int ten=(n1/10)%10;
+            System.out.print(one);
+            System.out.print(ten);
+            
+        }
+        else
+            System.out.println("STDOUT");
+    }
+    }
